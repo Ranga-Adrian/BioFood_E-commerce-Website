@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body table tr,th,td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    border: 2px solid black;
+    width:75%; 
+    margin:1em auto;
+}
+
+li,
+a,
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: hsl(135, 85%, 37%);
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 2em;
+    border: 10px double hsla(120, 92%, 20%, 0.788);
+    border-radius: 50%;
+}
+
+.logo:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: hotpink;
+}
+
+.nav_link {
+    list-style-type: none;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav_link li a {
+    transition: all 0.3s ease 0s;
+    color: hsl(135, 78%, 14%);
+}
+
+nav ~ a {
+    color: hsl(135, 78%, 14%);
+    margin-bottom: 16px;
+}
+
+nav ~ a:hover {
+    color: hsl(84, 80%, 53%);
+}
+
+nav ~ a i {
+    color: yellow;
+}
+
+.nav_link li a:hover {
+    color: hsl(84, 80%, 53%);
+}
+
+
+/* ==========================================================================================================================================================================================
+
+                                                    Pagina Adauga Produs Inceput
+
+=============================================================================================================================================================================================*/
+
+
+div#adaugaProdus {
+    border: 2px solid darkred;
+}
+
+body#adaugareProdus {
+    background-image: url(assets/images/adaugarePlante.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    width: 100%;
+}
+
+div#adaugaProdus {
+    background-color: hsla(135, 89%, 26%, 0.521);
+    display: inline-block;
+    width: 50%;
+    margin: 10% 25%;
+    color: white;
+    /* height: 50%; */
+}
+
+div#adaugaProdus form {
+    margin: 1em 1em;
+    text-align: center;
+    font-size: 1em;
+}
+
+div#adaugaProdus form input {
+    height: 10%;
+    width: 50%;
+}
+
+div#adaugaProdus form input[type='submit'] {
+    border-radius: 15px;
+    color: hsl(135, 89%, 26%);
+    font-size: 1em;
+    cursor: pointer;
+    background-color: white
+}
+
+form fieldset div {
+    margin-top: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+/* ==========================================================================================================================================================================================
+
+                                                    Pagina Adauga Produs Sfarsit
+
+=============================================================================================================================================================================================*/
+
+
+/* ==========================================================================================================================================================================================
+
+                                                    Pagina Utilizatori Inceput
+
+=============================================================================================================================================================================================*/
+div#utilizatori {
+    /* background-image: url("assets/images/adaugarePlante.jpg") !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;  */
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    background-color: #018749;
+    width: 100%;
+    height: 4em;
+    color: white;
+    font-size: 1.2em;
+    /* margin: 1em; */
+}
+
+div#utilizatori div {
+    margin: 0 25%;
+    text-align: center;
+}
+
+div#utilizatori div#cautaStergeUtilizator {
+    margin: 1em 25%;
+}
+
+
+
+/* ==========================================================================================================================================================================================
+
+                                                    Pagina Utilizatori Sfarsit
+
+=============================================================================================================================================================================================*/

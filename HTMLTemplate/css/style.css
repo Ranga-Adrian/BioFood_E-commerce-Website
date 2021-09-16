@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* nav {
+    background-color: green;
+}
+
+.logo {
+    font-size: 2rem;
+    color: hsla(0, 5%, 17%, 0.877);
+    padding: 0.3em;
+} */
+
+/* nav ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+} */
+
+/* header nav a, nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    height: 2em;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.container .logo {
+    justify-content: flex-start;
+}
+
+.navigatie{
+    display: flex;
+} */
+
+/* =======================================================================================================================================
+                                        Header Start
+=======================================================================================================================================*/
+
+li,
+a,
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: hsl(135, 85%, 37%);
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 2em;
+    border: 10px double hsla(120, 92%, 20%, 0.788);
+    border-radius: 50%;
+}
+
+.logo:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: hotpink;
+}
+
+.nav_link {
+    list-style-type: none;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link li a {
+    transition: all 0.3s ease 0s;
+    color: hsl(135, 78%, 14%);
+}
+
+nav ~ a {
+    color: hsl(135, 78%, 14%);
+    margin-bottom: 16px;
+}
+
+nav ~ a:hover {
+    color: hsl(84, 80%, 53%);
+}
+
+nav ~ a i {
+    color: yellow;
+}
+
+.nav_link li a:hover {
+    color: hsl(84, 80%, 53%);
+}
+
+#aut {
+    color: hsl(120, 95%, 24%);
+    background-color: hsl(84, 80%, 53%);
+    padding: 1em;
+    border-radius: 10%;
+}
+
+#aut:hover {
+    transition: all 0.5s ease-out;
+    background-color: hsl(120, 100%, 48%);
+}
+
+/* =======================================================================================================================================
+                                        Header End                                  
+=======================================================================================================================================*/
+
+/* =======================================================================================================================================
+                                        Carusel Start                                  
+=======================================================================================================================================*/
+.carusel {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid gold;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    border: 5px solid red;
+}
+
+.slides input {
+    display: none;
+}
+
+.carusel .slides img {
+    width: 100%;
+    height: auto;
+    border: 5px solid blue;
+}
+
+/* CSS pentru nagigatie manuala*/
+.navigatie-manuala {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid hsl(120, 90%, 24%);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: hsl(84, 80%, 53%);
+}
+
+.carousel-indicators li {
+    background-color: rgb(238, 11, 11);
+}
+
+.carousel-inner .carousel-item p {
+    position: relative;
+    top: 1.5em;
+    font-size: 2em;
+}
+
+/* =======================================================================================================================================
+                                        Carusel End                                  
+=======================================================================================================================================*/
+
+.w-100 {
+    /* height: 85vh; */
+    height: 35em;
+}
+
+.carousel-caption {
+    border: 5px inset hsla(120, 100%, 25%, 0.527);
+    border-radius: 25% 0 25% 0;
+    /* background-color: hsla(120, 92%, 43%, 0.26); */
+    background-image: linear-gradient(
+        to bottom right,
+        hsla(66, 86%, 29%, 0.267),
+        hsla(108, 100%, 50%, 0.205)
+    );
+    color: hsl(0, 0%, 100%);
+    /* font-size: 2em; */
+    top: 2em;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: hsl(120, 95%, 24%);
+    border-radius: 25%;
+}
+
+/* =======================================================================================================================================
+                                        Sectiune Utilitati Inceput                                  
+=======================================================================================================================================*/
+.utilitati {
+    padding: 4em 0.8em;
+    position: relative;
+}
+
+.continut {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/* =======================================================================================================================================
+                                        Sectiune Utilitati Sfarsit                                  
+=======================================================================================================================================*/
+
+.card-body {
+    border: none;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.card-body:hover {
+    transition: all 0.5s ease-out;
+    border-radius: 50%;
+    background-color: rgba(18, 124, 18, 0.329);
+}
+
+/* =======================================================================================================================================
+                                        Sectiune Categorii Produse Inceput                                  
+=======================================================================================================================================*/
+
+/* =======================================================================================================================================
+                                        Sectiune Categorii Produse Sfarsit                                  
+=======================================================================================================================================*/
+#categorii-produse .owl-carousel .product a {
+    overflow: hidden;
+}
+
+#categorii-produse .owl-carousel .product img {
+    transition: transform 0.5s ease;
+}
+
+#categorii-produse .owl-carousel .product img:hover {
+    transform: scale(1.1);
+}
+
+#categorii-produse .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 30%;
+    outline: none;
+}
+
+#categorii-produse .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+    font-size: 35px;
+    color: rgba(18, 124, 18, 0.329);
+}
+
+#categorii-produse .owl-carousel .owl-nav button.owl-prev span {
+    font-size: 35px;
+    color: rgba(18, 124, 18, 0.329);
+    margin-left: -4rem;
+    padding: 0 1rem;
+}
+
+#categorii-produse .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+
+#categorii-produse .owl-carousel .owl-nav button.owl-next span {
+    font-size: 35px;
+    color: rgba(18, 124, 18, 0.329);
+    margin-right: -4rem;
+    padding: 0 1rem;
+}
+
+#categorii-produse .owl-carousel .product h6 {
+    margin-top: 10px;
+}
+
+/* =======================================================================================================================================
+                                        Sectiune Vanzari Top Inceput                                  
+=======================================================================================================================================*/
+#vanzari-top .owl-carousel .product a {
+    overflow: hidden;
+}
+
+#vanzari-top .owl-carousel .product img {
+    transition: transform 0.5s ease;
+}
+
+#vanzari-top .owl-carousel .product img:hover {
+    transform: scale(1.1);
+}
+
+#vanzari-top .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 30%;
+    outline: none;
+}
+
+#vanzari-top .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+    font-size: 35px;
+    color: rgba(18, 124, 18, 0.329);
+}
+
+#vanzari-top .owl-carousel .owl-nav button.owl-prev span {
+    font-size: 35px;
+    color: rgba(18, 124, 18, 0.329);
+    margin-left: -4rem;
+    padding: 0 1rem;
+}
+
+#vanzari-top .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+
+#vanzari-top .owl-carousel .owl-nav button.owl-next span {
+    font-size: 35px;
+    color: rgba(18, 124, 18, 0.329);
+    margin-right: -4rem;
+    padding: 0 1rem;
+}
+
+#vanzari-top .owl-carousel .product h6 {
+    margin-top: 10px;
+}
+/* =======================================================================================================================================
+                                        Sectiune Vanzari Top Sfarsit                                  
+=======================================================================================================================================*/
+
+/* =======================================================================================================================================
+                                        Sectiune Categorii Inceput                                  
+=======================================================================================================================================*/
+
+#gama-produse .grid .grid-item {
+    margin-right: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* =======================================================================================================================================
+                                        Sectiune Categorii Sfarsit                                  
+=======================================================================================================================================*/
+
+/*=================================================================================================================
+
+                                                Contact Section Start
+
+=================================================================================================================*/
+section#contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*='col-'] {
+    padding: 1em;
+}
+
+section#contact .col-15 {
+    flex: 50%;
+    background-color: hsl(125, 77%, 54%);
+}
+
+.col-15 iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.col-16 {
+    flex: 50%;
+    /* background-image: url('/assets/images/contact.jpg'); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col-16 form {
+    border-radius: 1em;
+    background-color: hsl(135, 85%, 37%);
+    color: whitesmoke;
+}
+
+form input,
+form textarea {
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.col-17 {
+    display: inline-block;
+    width: 49%;
+}
+
+.col-17 input {
+    width: 100%;
+    height: 2em;
+}
+
+.col-18 {
+    display: inline-block;
+    width: 50%;
+}
+
+.col-18 input {
+    width: 100%;
+    height: 2em;
+}
+
+.col-19 input {
+    width: 100%;
+    height: 2em;
+}
+
+.col-20 textarea {
+    width: 100%;
+}
+
+form button {
+    color: #ffffff;
+    background-color: hsl(120, 84%, 57%);
+    border: none;
+    padding: 0.6em;
+    border-radius: 10px;
+    margin: 0.3em 1em;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    display: none;
+    border-radius: 50%;
+    background-color: hsl(120, 84%, 57%);
+    color: whitesmoke;
+}
+
+/*=================================================================================================================
+
+                                                Contact Section End
+
+=================================================================================================================*/
+
+/* =======================================================================================================================================
+                                        Sectiune Footer Inceput                                  
+=======================================================================================================================================*/
+
+footer {
+    background-color: hsl(135, 85%, 37%);
+}
+
+footer ul.contact {
+    margin-top: 2em;
+    list-style-type: none;
+}
+
+/* =======================================================================================================================================
+                                        Sectiune Footer Sfarsit                                  
+=======================================================================================================================================*/
+
+body#logare {
+    background-image: url(../assets/images/food-basket.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100vh;
+}
+
+div#container {
+    /* background-color: rgba(245, 222, 179, 0.699); */
+    position: relative;
+    top: 5em;
+    margin: 0 3em;
+    border-radius: 15px;
+    border: 10px inset rgb(47, 255, 99)
+}
+
+div#inregistrare {
+    background-color: hsl(135, 89%, 26%);
+    display: inline-block;
+    width: 50%;
+    color: white;
+    /* height: 50%; */
+}
+
+div#inregistrare form {
+    margin: 1em 1em;
+    text-align: center;
+    font-size: 1em;
+}
+
+div#inregistrare form input {
+    height: 10%;
+    width: 50%;
+}
+
+div#inregistrare form input[type='submit'] {
+    border-radius: 15px;
+    color: hsl(135, 89%, 26%);
+    font-size: 1em;
+    cursor: pointer;
+    background-color: white
+}
+
+div#autentificare {
+    background-color: rgba(255, 255, 255, 0.548);
+    float: right;
+    width: 50%;
+    height: 55vh;
+}
+
+div#autentificare form {
+    margin: 1em 1em;
+    text-align: center;
+    font-size: 1em;
+}
+
+div#autentificare form input {
+    height: 10%;
+    width: 50%;
+}
+
+div#autentificare form input[type='submit'] {
+    border-radius: 15px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: hsl(135, 89%, 26%);
+}

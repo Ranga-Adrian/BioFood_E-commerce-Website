@@ -1,0 +1,75 @@
+body#logare {
+    background-image: url(assets/images/food-basket.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+div#container {
+    position: relative;
+    top: 5em;
+    margin: 0 3em;
+    border-radius: 15px;
+    border: 10px inset rgb(47, 255, 99);
+}
+
+div#inregistrare {
+    background-color: hsl(135, 89%, 26%);
+    display: inline-block;
+    width: 50%;
+    color: white;
+    /* height: 50%; */
+}
+
+div#inregistrare form {
+    margin: 1em 1em;
+    text-align: center;
+    font-size: 1em;
+}
+
+div#inregistrare form input {
+    height: 10%;
+    width: 50%;
+}
+
+div#inregistrare form input[type='submit'] {
+    border-radius: 15px;
+    color: hsl(135, 89%, 26%);
+    font-size: 1em;
+    cursor: pointer;
+    background-color: white;
+}
+
+div#autentificare {
+    background-color: rgba(255, 255, 255, 0.548);
+    float: right;
+    width: 50%;
+    height: 42vh;
+}
+
+div#autentificare form {
+    margin: 1em 1em;
+    text-align: center;
+    font-size: 1em;
+}
+
+div#autentificare form input {
+    height: 10%;
+    width: 50%;
+}
+
+div#autentificare form input[type='submit'] {
+    border-radius: 15px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: hsl(135, 89%, 26%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
